@@ -1,0 +1,73 @@
+/* styles/custom.module.css */
+
+.pageContainer {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #ffd700; /* Yellow background */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .header p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .mainTitle {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  .radarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .stationsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stationContainer {
+    background-color: #d32f2f; /* Red background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 10px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .stationContainer:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+  }
+  
+  .stationName {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .stationDistance {
+    font-size: 16px;
+  }
+  
+  

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import StationList from '../components/StationList';
-import Radar from '../components/radar';
+import Radar from '../components/Radar';
 
 export default function Home() {
   const [stations, setStations] = useState([]);
@@ -27,17 +27,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <div className="menu">
-        <h1>Velo Antwerpen Stations</h1>
-        <button onClick={() => setMenuOpen(!menuOpen)}>Menu</button>
-      </div>
-      {menuOpen && (
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      )}
+   <h1>Velo Antwerpen Stations</h1>
       <Radar />
       <StationList stations={stations} />
     </div>

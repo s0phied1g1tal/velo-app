@@ -1,18 +1,19 @@
-/* styles/custom.css */
-.customText {
-    color: #ff4343; /* Set your desired text color */
-  }
-  
-  .customProgress-bar {
-    margin-top: 10px;
-  }
-  
-  .customContainer {
-    padding: 20px;
-    background-color: #f8f9fa; /* Optional: light background for better visibility */
-  }
-
-  /* custom.css */
-.station-name {
-  color: black !important; /* Override default blue color */
+/* StationDetail.module.css */
+.customContainer {
+  padding: 20px;
+  background-color: #f8f9fa;
 }
+
+.customText {
+  color: #333;
+}
+
+.customProgressBar {
+  margin-top: 10px;
+}
+
+.radarCanvas {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
