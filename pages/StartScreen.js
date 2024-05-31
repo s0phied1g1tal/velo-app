@@ -1,3 +1,4 @@
+// src/components/StartScreen.js
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import StationList from '../components/StationList';

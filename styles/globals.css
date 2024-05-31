@@ -171,3 +171,39 @@ button:hover {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* src/styles.css */
+
+.start-screen {
+  text-align: center;
+  margin-top: 100px; /* Adjust as needed */
+}
+
+.start-screen h1 {
+  font-size: 3em;
+  color: #333;
+}
+
+.start-screen img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.start-screen blockquote {
+  font-style: italic;
+  color: #666;
+}
+
+.start-screen .start-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.start-screen .start-button:hover {
+  background-color: #0056b3;
+}
