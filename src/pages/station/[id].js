@@ -12,7 +12,7 @@ const StationDetailPage = () => {
 
   useEffect(() => {
     if (id) {
-      fetch(`http://api.citybik.es/v2/networks/velo-antwerpen`)
+      fetch(`https://api.citybik.es/v2/networks/velo-antwerpen`)
         .then(response => response.json())
         .then(data => {
           const stationData = data.network.stations.find(st => st.id === id);
