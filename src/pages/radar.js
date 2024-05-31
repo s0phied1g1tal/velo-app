@@ -42,7 +42,7 @@ const RadarPage = () => {
       </div>
       <style jsx>{`
         .container {
-          margin-top: 100px;
+          margin-top: 10px;
           padding: 40px;
           background-color: white;
           background-position: center;
