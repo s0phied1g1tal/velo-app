@@ -8,7 +8,7 @@ const RadarPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://api.citybik.es/v2/networks/velo-antwerpen')
+    fetch('https://api.citybik.es/v2/networks/velo-antwerpen')
       .then(response => response.json())
       .then(data => {
         const stationsData = data.network.stations.slice(0, 3);
