@@ -68,7 +68,6 @@ const StationDetailPage = () => {
         </div>
       </div>
       <div className="radar">
-        <h2 className="radar-title">Radar</h2>
         {userCoords && <Radar stations={[station]} userCoords={userCoords} />}
       </div>
       <button className="back-button" onClick={handleBack}>Back</button>
