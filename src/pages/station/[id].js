@@ -74,7 +74,7 @@ const StationDetailPage = () => {
       <button className="back-button" onClick={handleBack}>Back</button>
       <style jsx>{`
         .container {
-          margin-top: 20px;
+          margin-top: 100px;
           padding: 20px;
           background-color: #f5f5f5;
           border-radius: 10px;

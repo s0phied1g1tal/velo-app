@@ -1,98 +1,49 @@
 // src/pages/index.js
-import React from 'react';
+import Link from 'next/link';
 
-const IndexPage = () => {
+const HomePage = () => {
   return (
     <div className="container">
-      <div className="content">
-        <h1>Welcome to My Velo App</h1>
-        <p>Explore the city with ease using our bike sharing service!</p>
-        <button>Get Started</button>
-      </div>
+      <h1 className="title">Welcome to Velo App</h1>
+      <p className="description">Explore the city with Velo bike rentals.</p>
+      <Link href="/radar">
+        <div className="button">Start Exploring</div>
+      </Link>
       <style jsx>{`
         .container {
-          background-color: #63a4ff; /* Sky blue */
-          height: 100vh;
           display: flex;
+          flex-direction: column;
+          align-items: center;
           justify-content: center;
-          align-items: flex-end;
-          position: relative;
-          overflow: hidden;
+          height: 100vh;
+          background-color: #f44336;
+          color: #fff;
         }
-        .city-skyline {
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 100%;
-          height: 200px;
-          background-color: transparent;
+        .title {
+          font-size: 36px;
+          margin-bottom: 20px;
         }
-        .building {
-          position: absolute;
-          bottom: 0;
-          width: 40px;
-          height: 100px;
-          background-color: #fff; /* White */
+        .description {
+          font-size: 18px;
+          margin-bottom: 30px;
+        }
+        .button {
+          background-color: orange;
+          color: #fff;
+          border: none;
           border-radius: 5px;
+          padding: 10px 20px;
+          font-size: 18px;
+          text-decoration: none;
+          transition: background-color 0.3s;
+          cursor: pointer;
         }
-        .building-1 {
-          left: 20%;
-          height: 120px;
-        }
-        .building-2 {
-          left: 45%;
-          height: 90px;
-        }
-        .building-3 {
-          left: 70%;
-          height: 140px;
-        }
-        .building-4 {
-          left: 90%;
-          height: 110px;
-        }
-        .building-window {
-          position: absolute;
-          bottom: 5px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 10px;
-          height: 10px;
-          background-color: #ffe066; /* Yellow */
-          border-radius: 50%;
+        .button:hover {
+          background-color: #1565c0;
         }
       `}</style>
-      <div className="city-skyline">
-        <div className="building building-1">
-          <div className="building-window"></div>
-          <div className="building-window" style={{ bottom: '20px' }}></div>
-          <div className="building-window" style={{ bottom: '40px' }}></div>
-          <div className="building-window" style={{ bottom: '60px' }}></div>
-          <div className="building-window" style={{ bottom: '80px' }}></div>
-        </div>
-        <div className="building building-2">
-          <div className="building-window"></div>
-          <div className="building-window" style={{ bottom: '20px' }}></div>
-          <div className="building-window" style={{ bottom: '40px' }}></div>
-          <div className="building-window" style={{ bottom: '60px' }}></div>
-        </div>
-        <div className="building building-3">
-          <div className="building-window"></div>
-          <div className="building-window" style={{ bottom: '20px' }}></div>
-          <div className="building-window" style={{ bottom: '40px' }}></div>
-          <div className="building-window" style={{ bottom: '60px' }}></div>
-          <div className="building-window" style={{ bottom: '80px' }}></div>
-          <div className="building-window" style={{ bottom: '100px' }}></div>
-        </div>
-        <div className="building building-4">
-          <div className="building-window"></div>
-          <div className="building-window" style={{ bottom: '20px' }}></div>
-          <div className="building-window" style={{ bottom: '40px' }}></div>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default IndexPage;
+export default HomePage;

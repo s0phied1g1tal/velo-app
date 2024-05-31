@@ -42,28 +42,28 @@ const RadarPage = () => {
       </div>
       <style jsx>{`
         .container {
-          margin-top: 20px;
-          padding: 20px;
-          background-image: url('styles/ab95dffe36b72b8ce2d27634b1c97e9c.jpg');
-          background-size: cover;
+          margin-top: 100px;
+          padding: 40px;
+          background-color: white;
           background-position: center;
-          border-radius: 10px;
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+       
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
         }
         .title {
-          color: black;
-          font-size: 25px;
+          color: orange;
+          font-size: 40px;
           margin-bottom: 20px;
           text-align: center;
         }
         .stations {
+          margin-top: 20px;
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
           gap: 20px;
         }
         .station-link {
           text-decoration: none;
-          color: inherit;
+          color: black;
           cursor: pointer;
         }
         .station-link:hover {
